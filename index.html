@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <title>Task Tracker</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Task Tracker</h1>
+      <section id="input">
+        <label for="task">Enter the task</label>
+        <input type="text" name="task" id="task">
+        <button id="btn">Add</button>
+      </section>
+    </header>
+    <main>
+      <section id="hold" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="deleteTask(event)">
+        <h2>Hold</h2>
+      </section>
+      <section id="progress" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="deleteTask(event)">
+        <h2>Progress</h2>
+      </section>
+      <section id="review" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="deleteTask(event)">
+        <h2>Review</h2>
+      </section>
+      <section id="approved" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="deleteTask(event)">
+        <h2>Approved</h2>
+      </section>
+    </main>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
